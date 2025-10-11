@@ -25,6 +25,16 @@
       <div class = "nav-button" id = "events-button">
           
       </div>
+      <!-- Filter Nav Button stuff -->
+      <div class="filterDropdown">
+        <button>Filter</button>
+        <div class="filterMenuStuff">
+          <label><input type="checkbox" class="category1">Cat1</label>
+          <label><input type="checkbox" class="category2">Cat2</label>
+          <label><input type="checkbox" class="category3">Cat3</label>
+        </div>
+      </div>
+      <!-- End of Filter Nav Button stuff -->
     </div>
     <div class="main">
       <div class="calendar-container">
@@ -135,6 +145,6 @@
       <h3>Next Event Today</h3>
       <div id="today-event" aria-live="polite">Loading…</div>
     </div>
-    <script src="render.js"></script>
+    <script src="./render.js"></script>
   </body> 
 </html>
