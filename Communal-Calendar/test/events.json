@@ -1,1 +1,239 @@
-[{"eventName":"sdgjsdiubfsibuf","startDate":"","startTime":"","endTime":"","endDate":"","privacy":"Privacy-Public","repeat":"One-Time","friends":["friend3","friend5","friend7","friend8"]}]
+[
+  {
+    "eventName": "sdgjsdiubfsibuf",
+    "startDate": "",
+    "startTime": "",
+    "endTime": "",
+    "endDate": "",
+    "privacy": "Privacy-Public",
+    "repeat": "One-Time",
+    "friends": [
+      "friend3",
+      "friend5",
+      "friend7",
+      "friend8"
+    ]
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-11",
+    "Time start": "13:23",
+    "Time end": "01:23",
+    "End Date": "2025-11-06",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-06",
+    "Time start": "13:30",
+    "Time end": "01:23",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-06",
+    "Time start": "13:30",
+    "Time end": "01:23",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abc",
+    "Start Date": "2025-11-06",
+    "Time start": "13:30",
+    "Time end": "01:23",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abcde",
+    "Start Date": "2025-11-06",
+    "Time start": "13:30",
+    "Time end": "01:23",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "abc123",
+    "Start Date": "2025-11-06",
+    "Time start": "13:30",
+    "Time end": "01:23",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend1"
+    ]
+  },
+  {
+    "Name": "test event",
+    "Start Date": "2025-11-06",
+    "Time start": "14:50",
+    "Time end": "01:49",
+    "End Date": "2025-11-07",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "kdjbksug",
+    "Start Date": "2025-11-24",
+    "Time start": "00:32",
+    "Time end": "17:34",
+    "End Date": "2025-11-14",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend2",
+      "friend3",
+      "friend4"
+    ]
+  },
+  {
+    "Name": "kdjbksug",
+    "Start Date": "2025-11-24",
+    "Time start": "00:32",
+    "Time end": "17:34",
+    "End Date": "2025-11-14",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend2",
+      "friend3",
+      "friend4"
+    ]
+  },
+  {
+    "Name": "kdjbksug",
+    "Start Date": "2025-11-24",
+    "Time start": "00:32",
+    "Time end": "17:34",
+    "End Date": "2025-11-14",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend2",
+      "friend3",
+      "friend4"
+    ]
+  },
+  {
+    "Name": "kdjbksug",
+    "Start Date": "2025-11-24",
+    "Time start": "00:32",
+    "Time end": "17:34",
+    "End Date": "2025-11-14",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend2",
+      "friend3",
+      "friend4"
+    ]
+  },
+  {
+    "Name": "kdjbksug",
+    "Start Date": "2025-11-24",
+    "Time start": "00:32",
+    "Time end": "17:34",
+    "End Date": "2025-11-14",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": [
+      "friend2",
+      "friend3",
+      "friend4"
+    ]
+  }
+]

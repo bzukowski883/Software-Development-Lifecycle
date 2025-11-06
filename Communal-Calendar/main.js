@@ -62,33 +62,45 @@ app.whenReady().then(() => {
   })
 })
 
-//recieves data from create event button
+// Receives data from create event button (MAKES EVENT DATA COLLLECTABLE)
 ipcMain.handle('create-event', async (event, StringEvent) => {
-  NewEvent = JSON.parse(StringEvent)
-  Object.keys(NewEvent).forEach(key => {
-    console.log(`${key}: ${NewEvent[key]}`)
-  })
-  ExistingEvents.push({ //taking our existing events, adding on our new one, then pushing them to file
-    eventName: NewEvent.eventName,
-    startDate: NewEvent.startDate,
-    startTime: NewEvent.startTime, 
-    endTime: NewEvent.endTime, 
-    endDate: NewEvent.endDate, 
-    privacy: NewEvent.privacy, 
-    repeat: NewEvent.repeat, 
-    friends: NewEvent.friends
-  })
+  try {
+    const NewEvent = JSON.parse(StringEvent);
 
-  ExistingEventsJSON = JSON.stringify(ExistingEvents);    //converts object to JSON
-  fs.writeFile(EventsFilePath, ExistingEventsJSON, 'utf8', (err) => {    //appends JSON to the specified file
-    if (err) {
-        // Handle errors
+    // Log the data we got from render.js
+    Object.keys(NewEvent).forEach(key => {
+      console.log(`${key}: ${NewEvent[key]}`);
+    });
+
+    // Push the event to the existing array
+    ExistingEvents.push({
+      Name: NewEvent.Name,
+      "Start Date": NewEvent["Start Date"],
+      "Time start": NewEvent["Time start"],
+      "Time end": NewEvent["Time end"],
+      "End Date": NewEvent["End Date"],
+      Privacy: NewEvent.Privacy,
+      "Repeat Frequency": NewEvent["Repeat Frequency"],
+      Friends: NewEvent.Friends
+    });
+
+    // Save to events.json
+    const ExistingEventsJSON = JSON.stringify(ExistingEvents, null, 2);
+    fs.writeFile(EventsFilePath, ExistingEventsJSON, 'utf8', (err) => {
+      if (err) {
         console.error(`Error writing to file: ${err.message}`);
         return;
-    }
-    console.log(`File has been written successfully to ${EventsFilePath}`);
+      }
+      console.log(`Event saved successfully to ${EventsFilePath}`);
+    });
+
+    return { success: true };
+  } catch (error) {
+    console.error("Error in create-event:", error);
+    return { success: false, error: error.message };
+  }
 });
-})
+
 
 ipcMain.handle('retrive-categories', async => {
   let ExistingCategoriesString = JSON.stringify(ExistingCategories)
