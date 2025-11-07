@@ -115,6 +115,18 @@ margin: 35px;
     border: #2e2e2e, solid;
     border-radius: 4px;
 }
+.days-section{
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 5rem;
+    height: 60px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: #2e2e2e, solid;
+    border-radius: 4px;
+    font-size: small;
+}
 
 #upcoming-events {
   display: flex;

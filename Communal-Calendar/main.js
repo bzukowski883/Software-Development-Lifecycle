@@ -76,7 +76,8 @@ ipcMain.handle('create-event', async (event, StringEvent) => {
     endDate: NewEvent.endDate, 
     privacy: NewEvent.privacy, 
     repeat: NewEvent.repeat, 
-    friends: NewEvent.friends
+    friends: NewEvent.friends,
+    eventDates: NewEvent.eventDates
   })
 
   ExistingEventsJSON = JSON.stringify(ExistingEvents);    //converts object to JSON
