@@ -13,16 +13,16 @@
       "port": 9222,
       "request": "attach",
       "type": "chrome",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}/Communal-Calendars-App"
     },
     {
       "name": "Main",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "cwd": "${workspaceFolder}/Communal-Calendars-App",
+      "runtimeExecutable": "${workspaceFolder}/Communal-Calendars-App/node_modules/.bin/electron",
       "windows": {
-        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+        "runtimeExecutable": "${workspaceFolder}/Communal-Calendars-App/node_modules/.bin/electron.cmd"
       },
       "args": [".", "--remote-debugging-port=9222"],
       "outputCapture": "std",

@@ -99,36 +99,3 @@ function ApplyCategories(categories){
         }
     }
 }
-//add an event listener so we can throw the above js when the submit button is clicked
-document.getElementById('get-calendar-data').addEventListener('submit',formSubmit);
-
-// --- Event Search Functionality ---
-const searchInput = document.getElementById("events-search");
-const todayEventDiv = document.getElementById("today-event");
-
-// Listen for typing in the search bar
-if (searchInput) {
-  searchInput.addEventListener("input", async () => {
-    const query = searchInput.value.toLowerCase().trim();
-    const events = await ipcRenderer.invoke("get-events");
-    const filtered = events.filter(ev =>
-      ev.eventName.toLowerCase().includes(query) ||
-      ev.startDate.toLowerCase().includes(query) ||
-      ev.startTime.toLowerCase().includes(query) ||
-      ev.endTime.toLowerCase().includes(query)
-    );
-
-    // Clear and re-display results
-    todayEventDiv.innerHTML = "";
-    if (filtered.length === 0) {
-      todayEventDiv.textContent = "No matching events found.";
-    } else {
-      filtered.forEach(ev => {
-        const item = document.createElement("div");
-        item.textContent = `${ev.eventName || "(Unnamed Event)"} — ${ev.startDate || "No Date"} ${ev.startTime || ""}`;
-        item.classList.add("event-item");
-        todayEventDiv.appendChild(item);
-      });
-    }
-  });
-}
