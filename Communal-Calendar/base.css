@@ -9,7 +9,6 @@
   margin: 0;
 }
 
-
 body {
   overflow: hidden; 
   height: 100vh;
@@ -28,7 +27,7 @@ body {
   margin: 3px;
 }
 
-/* nav */
+
 .nav-bar {
   margin: 0;
   display: flex;
@@ -39,11 +38,87 @@ body {
   height: 40px;
   background: var(--navBarColor);
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start; 
   z-index: 10;
+  gap: 20px; 
+  padding: 0 20px; 
 }
 
-/* cal */
+/* Profile Styles - Added for the profile icon functionality */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profile-button:hover {
+  background: #e0e0e0;
+}
+
+.profile-icon {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; 
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.profile-option {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-option:hover {
+  background: #f5f5f5;
+}
+
+.profile-option:last-child {
+  border-bottom: none;
+}
+
+
+.signInButton {
+ 
+ 
+}
+
+
 .calendar-container {
   flex: 1 1 auto;
   display: flex;
@@ -54,7 +129,6 @@ body {
   margin-bottom: 3px;
    overflow-x: auto;  
   overflow-y: hidden;
-
 }
 
 .calendar {
@@ -69,7 +143,7 @@ body {
   border-radius: 6px;
 }
 
-/* Bottom */
+
 .bottom-section {
   flex-shrink: 0;
   border-top: 1px solid #ccc;
@@ -88,7 +162,7 @@ body {
   border-radius: 6px;
 }
 
-/*right*/
+
 .right-section {
   display: flex;
   flex-direction: column;
@@ -119,7 +193,7 @@ body {
   background-color: #ffffff;
 }
 
-/* Search */
+
 .search-section {}
 
 .search-item {
@@ -153,7 +227,7 @@ search {
   height: 100%;
 }
 
-/* Beautiful Calendar Stuff section  */
+
 .calendar-section {
   flex: 1;
   display: flex;
@@ -161,22 +235,22 @@ search {
   overflow: hidden;
   height: calc(100vh - 180px); 
   margin-top: 40px; 
-  padding-bottom: 140px; /*avoid bottom screwups*/
+  padding-bottom: 140px; 
    overflow-x: auto;
   overflow-y: hidden;
   overflow: visible;
 }
 
-/* Scrollable */
+
 .calendar-box {
   flex: 1;
   width: 100%;
   border: 2px solid #333;
   background: white;
-  overflow: auto;       /*scrollable*/
+  overflow: auto;       
   box-sizing: border-box;
   padding: 10px;
-  position: relative;   /*event pos*/
+  position: relative;   
 }
 
 .calendar-grid {
@@ -196,7 +270,7 @@ search {
   background-color: #fafafa;
 }
 
-/* the actual event blocks */
+
 .event-block {
   position: absolute;
   border-radius: 4px;
@@ -207,7 +281,7 @@ search {
   opacity: 0.9;
 }
 
-/* Upcoming Event Section */ 
+
 #upcoming-events {
   display: flex;
   flex-direction: column;
@@ -236,7 +310,7 @@ search {
   border-radius: 6px;
 }
 
-/* inputs */
+
 input {
   background-color: #c9c8cc;
   border: #1f1f1f 1px solid;
@@ -252,7 +326,7 @@ input[type="radio"], input[type="checkbox"] {
   text-align: center;
 }
 
-/* Sign In popup */
+/* Sign in pop-up  */
 .signInPopUpOverlay {
   display: none;
   position: fixed;
@@ -305,7 +379,7 @@ input[type="radio"], input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Category Filter CSS */
+
 .filterDropdown button {
   background-color: black;
   color: white;

@@ -235,5 +235,35 @@
       "friend3",
       "friend4"
     ]
+  },
+  {
+    "Name": "xyz",
+    "Start Date": "2025-11-20",
+    "Time start": "12:30",
+    "Time end": "00:30",
+    "End Date": "2025-11-21",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "xyz",
+    "Start Date": "2025-11-20",
+    "Time start": "12:30",
+    "Time end": "00:30",
+    "End Date": "2025-11-21",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
+  },
+  {
+    "Name": "xyz",
+    "Start Date": "2025-11-20",
+    "Time start": "12:30",
+    "Time end": "00:30",
+    "End Date": "2025-11-21",
+    "Privacy": "Privacy-Public",
+    "Repeat Frequency": "One-Time",
+    "Friends": false
   }
 ]

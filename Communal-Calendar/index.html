@@ -15,15 +15,26 @@
     <title>Communal Calendar</title>
   </head>
   <body>
+    <!-- ========== NAV BAR - UPDATED LAYOUT ========== -->
     <div class="nav-bar">
+      <!-- SIGN IN / PROFILE SECTION -->
+      <!-- 🔄 UPDATED: This div gets dynamically updated by JavaScript:
+           - Shows "Sign In" button when logged out
+           - Shows profile icon + username when logged in  
+           - Profile dropdown appears on click with Change Picture & Sign Out options -->
       <div class="signInButton">
         <button>Sign In</button>
       </div>
+
+      <!-- KEPT: Empty nav buttons for future functionality -->
+      <!-- These can be implemented later for friends, filtering, and events features -->
       <div class="nav-button" id="friends-button"></div>
       <div class="nav-button" id="filter-button"></div>
       <div class="nav-button" id="events-button"></div>
 
-     
+      <!-- FILTER DROPDOWN -->
+      <!-- ✅ Currently the only functional nav element besides sign-in/profile -->
+      <!-- Shows category checkboxes on hover -->
       <div class="filterDropdown">
         <button>Filter</button>
         <div class="filterMenuStuff">
@@ -34,36 +45,51 @@
       </div>
     </div>
 
+    <!-- ========== SIGN IN POPUP MODAL ========== -->
+    <!-- Overlay that covers entire screen when sign-in is clicked -->
+    <!-- ❗ Initially hidden (display: none) - shown via JavaScript -->
     <div class="signInPopUpOverlay">
       <div class="signInPopUp">
+        <!-- Close button (X) in top-right corner -->
         <span class="closeSignInPopUp">&times;</span>
         <div class="signInPopUpContent">
           <p>Sign In</p>
+          <!-- Username input field -->
           <input type="text" placeholder="Username" id="userNameInput" />
+          <!-- Password input field -->
           <input type="password" placeholder="Password" id="passwordInput" />
+          <!-- Submit button - triggers authentication in JavaScript -->
           <input type="submit" id="signInSubmit" />
         </div>
       </div>
     </div>
 
+    <!-- ========== MAIN CALENDAR AREA ========== -->
     <div class="main">
       <div class="calendar-container">
         <div class="calendar">
           <div class="calendar-section">
             <div class="calendar-box" id="calendarBox">
+              <!-- 🔄 DYNAMIC: Calendar grid populated by render.js -->
+              <!-- Shows days of week and time slots for events -->
               <div class="calendar-grid" id="calendarGrid"></div>
             </div>
           </div>
 
-         <!---- <div class="School testBox">1</div>
+          <!-- COMMENTED OUT: Example category boxes for reference -->
+          <!---- <div class="School testBox">1</div>
           <div class="Work testBox">1</div>
           <div class="Family testBox">1</div>--->
         </div>
       </div>
 
-
+      <!-- ========== EVENT CREATION FORM ========== -->
       <search class="bottom-section">
+        <!-- 📝 Form for creating new calendar events -->
+        <!-- Submitted data is processed by render.js formSubmit() function -->
         <form class="search-container" id="get-calendar-data">
+          
+          <!-- EVENT BASIC INFO SECTION -->
           <div class="search-section">
             <div class="search-item">
               <label for="Event">Event: </label>
@@ -96,6 +122,7 @@
             </div>
           </div>
 
+          <!-- PRIVACY & REPEAT SETTINGS SECTION -->
           <div class="search-section">
             <div class="search-item"><label>Privacy:</label></div>
 
@@ -137,6 +164,7 @@
             </div>
           </div>
 
+          <!-- FRIENDS INVITATION SECTION -->
           <div class="search-section">
             <div class="search-item">
               <input
@@ -148,6 +176,7 @@
             </div>
 
             <div class="search-item">
+              <!-- Scrollable friends list for event invitations -->
               <div class="search-friends-section">
                 <div class="search-section">
                   <input type="checkbox" name="Friend" id="friend1" />
@@ -185,6 +214,7 @@
             </div>
           </div>
 
+          <!-- FORM SUBMISSION -->
           <div class="search-section">
             <input class="text-center" type="submit" value="submit" />
           </div>
@@ -192,26 +222,38 @@
       </search>
     </div>
 
+    <!-- ========== RIGHT SIDEBAR ========== -->
     <div class="right-section">
       <div class="box" id="box3">
+        <!-- TODAY'S EVENTS BOX -->
         <div class="box" id="today-box">
           <h3>Next Event Today</h3>
+          <!-- 🔄 DYNAMIC: Populated with today's events by JavaScript -->
           <div id="today-event" aria-live="polite">Loading…</div>
         </div>
       </div>
     </div>
+
+    <!-- ========== UPCOMING EVENTS SECTION ========== -->
     <section id="upcoming-events">
       <h2>Upcoming Events</h2>
+      <!-- Search bar for filtering upcoming events -->
       <input
         id="events-search"
         type="search"
         placeholder="Search by title, date, time..."
         aria-label="Search events"
       />
+      <!-- 🔄 DYNAMIC: Container for upcoming events list -->
       <div id="events-root" aria-live="polite"></div>
     </section>
 
+    <!-- ========== JAVASCRIPT FILES ========== -->
+    <!-- 📄 render.js - Handles calendar rendering, event creation, and form submission -->
     <script src="render.js"></script>
+    
+    <!-- 📄 signInPopUp.js - NEW: Handles authentication, profile management, and image uploads -->
+    <!-- 🔄 UPDATED: Now includes profile icon functionality and image file selection -->
     <script src="signInPopUp.js"></script>
   </body>
 </html>
