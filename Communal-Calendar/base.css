@@ -66,14 +66,17 @@ body {
   background: #e0e0e0;
 }
 
+/* Profile image fix – ensure it is always circular and displayed correctly */
 .profile-icon {
-  font-size: 18px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  background-color: #ddd; /* in case there's no image */
 }
+
+
 
 .username {
   font-size: 14px;
