@@ -44,7 +44,7 @@ body {
   padding: 0 20px; 
 }
 
-/* Profile Styles - Added for the profile icon functionality */
+/* Added for the profile icon functionality */
 .profile-container {
   position: relative;
   display: inline-block;
@@ -66,14 +66,14 @@ body {
   background: #e0e0e0;
 }
 
-/* Profile image fix – ensure it is always circular and displayed correctly */
+
 .profile-icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ccc;
-  background-color: #ddd; /* in case there's no image */
+  background-color: #ddd; 
 }
 
 
@@ -329,7 +329,7 @@ input[type="radio"], input[type="checkbox"] {
   text-align: center;
 }
 
-/* Sign in pop-up  */
+
 .signInPopUpOverlay {
   display: none;
   position: fixed;

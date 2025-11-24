@@ -10,18 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Always read current data from localStorage when page loads
     let currentUser = localStorage.getItem('currentUser');
 
-    // ❗ DEFAULT IMAGE FIX – fallback if no uploaded image exists
+    //  Fallback if no uploaded image exists
     function getStoredProfileImage() {
         return localStorage.getItem('profilePicture') 
             || "https://via.placeholder.com/100?text=User"; 
     }
 
-    // FIRST UI RENDER
+    // First UI render 
     updateAuthUI();
 
-    // -----------------------------
-    // SIGN-IN POPUP OPEN/CLOSE
-    // -----------------------------
+    
+    // SIGN-IN POPUP open/close
     signInButton.addEventListener("click", function () {
         if (currentUser) {
             alert(`Already signed in as ${currentUser}`);
@@ -34,9 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         signInOverlay.style.display = "none";
     });
 
-    // -----------------------------
-    // HANDLE LOGIN
-    // -----------------------------
+    
+    // Handle login
     signInSubmit.addEventListener("click", function () {
         const username = userNameInput.value;
         const password = passwordInput.value;
@@ -56,9 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // -----------------------------
-    // MAIN FUNCTION TO REFRESH UI
-    // -----------------------------
+    
+    // Main function to refresh 
     function updateAuthUI() {
 
         const signInButtonContainer = document.querySelector(".signInButton");
@@ -68,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (currentUser) {
 
-            // 🔁 FULL PROFILE BUTTON RENDER
+            // Full profile buttin render  
             signInButtonContainer.innerHTML = `
                 <div class="profile-container">
                     <button class="profile-button">
@@ -95,9 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     profileDropdown.style.display === "block" ? "none" : "block";
             });
 
-            // -----------------------------
-            // CHANGE PICTURE
-            // -----------------------------
+            
+            // Change picture 
             changePictureBtn.addEventListener('click', function() {
 
                 const fileInput = document.createElement('input');
@@ -114,10 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         reader.onload = function(e) {
 
-                            // SAVE NEW IMAGE
+                            // Save new image
                             localStorage.setItem("profilePicture", e.target.result);
 
-                            // RE-RENDER UI
+                            // Re-render UI 
                             updateAuthUI();
                         };
 
@@ -139,9 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }, 500);
             });
 
-            // -----------------------------
-            // SIGN OUT
-            // -----------------------------
+            
+            // Sign out 
             signOutBtn.addEventListener('click', function() {
                 currentUser = null;
                 localStorage.removeItem('currentUser');
@@ -157,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else {
 
-            // User is logged OUT → show sign-in button again
+            // User is logged OUT = show sign-in button again
             signInButtonContainer.innerHTML = `<button>Sign In</button>`;
             signInButtonContainer.querySelector('button').addEventListener('click', function () {
                 signInOverlay.style.display = "block";
