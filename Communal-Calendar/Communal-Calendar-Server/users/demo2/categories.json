@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "Name": "a",
+    "Color": "#ff0000",
+    "Privacy": "private"
+  }
+]

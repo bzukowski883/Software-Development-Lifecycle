@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "eventName": "a",
+    "startDate": "2025-12-14",
+    "endDate": "2025-12-14",
+    "startTime": "02:00",
+    "endTime": "03:00",
+    "privacy": "public",
+    "repeat": "none",
+    "friends": [],
+    "eventDates": [
+      {
+        "start": "12/14/2025, 2:00:00 AM",
+        "end": "12/14/2025, 3:00:00 AM"
+      }
+    ]
+  },
+  {
+    "eventName": "s",
+    "startDate": "2025-12-14",
+    "endDate": "2025-12-14",
+    "startTime": "07:00",
+    "endTime": "08:00",
+    "privacy": "public",
+    "repeat": "none",
+    "friends": [],
+    "eventDates": [
+      {
+        "start": "12/14/2025, 7:00:00 AM",
+        "end": "12/14/2025, 8:00:00 AM"
+      }
+    ]
+  }
+]

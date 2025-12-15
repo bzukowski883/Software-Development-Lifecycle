@@ -1,7 +1,7 @@
 :root{
-    --primaryColor: #545454;
-    --backgroundColor: #2e2e2e;
-    --navBarColor: #1f1f1f;
+    --primaryColor: #6897a3;
+    --backgroundColor: #546179;
+    --navBarColor: #749faa;
 }
 
 * {
@@ -10,6 +10,7 @@
 }
 
 body{
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,7 @@ body{
 
 /* Hover effect for profile container */
 .profile-container:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(91, 150, 222, 0.25);
 }
 
 /* Profile picture as circle. appears to the left of username */
@@ -208,8 +209,8 @@ body{
     box-sizing: border-box;
     padding: 2px;
     overflow: hidden;
-    border: 1px solid #333;
-    background-color: #6fc3ff;
+    border: 1px solid #eae7e7;
+    background-color: #e6c7da;
     color: #000;
     font-size: 0.8rem;
     cursor: pointer;
@@ -226,7 +227,7 @@ body{
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid #333;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(80, 75, 75, 0.2);
   padding: 8px;
   font-family: inherit;
   font-size: 0.9rem;
@@ -272,7 +273,7 @@ body{
   background: var(--navBarColor);
   color: white;
   font-weight: bold;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #292626;
 }
 
 
@@ -311,8 +312,8 @@ body{
 
 
 .hour-cell {
-  border: 1px solid #3a3a3a;
-  background-color: #2b2b2b;
+  border: 1px solid #94d7db;
+  background-color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -416,6 +417,15 @@ input{
     border-radius: 4px;
     padding: 2px 4px;
 }
+
+/* .bottom-section boxes  */
+.bottom-section input,
+.bottom-section select {
+    background-color: #ffffff; 
+    color: #000;
+}
+
+
 
 input[type="radio"], input[type="checkbox"]{
     margin-right: 5px;
@@ -572,7 +582,7 @@ input[type="radio"], input[type="checkbox"]{
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    color: #000000;
+    color: #706868;
 }
 
 .addCategoryPopUp input{
@@ -584,7 +594,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 .addCategoryPopUp button{
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(181, 120, 168);
     color: white;
     padding: 8px 20px;
     border: none;
@@ -616,7 +626,7 @@ input[type="radio"], input[type="checkbox"]{
     height: 60px;
     overflow-x: hidden;
     overflow-y: scroll;
-    border: #2e2e2e, solid;
+    border: #fcfbfb, solid;
     border-radius: 4px;
     font-size: small;
 }
@@ -629,7 +639,7 @@ input[type="radio"], input[type="checkbox"]{
 #friends-dropdown{
     position:relative;
     width: 120px;
-    background-color:lightgray
+    background-color:rgb(235, 227, 227)
 }
 
 #friends-dropdown-content{
@@ -637,7 +647,7 @@ input[type="radio"], input[type="checkbox"]{
     flex-direction: column;
     position: absolute;
     display: none;
-    background-color:lightgray
+    background-color:rgb(101, 88, 88)
 }
 
 #Friends-Drop-Container{
